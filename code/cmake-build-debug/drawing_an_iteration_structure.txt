@@ -1,0 +1,16 @@
+// creates an asymmetric 2 branching fractal 
+// graphics are arrows that show the transforms
+
+TRANSFORM t1 ROTATION 0 TRANSLATION (-50,50) SCALE 0.8
+
+// triangle shaped arrow
+GRAPHIC g1 (0,0) (-45,45) (-40,50) (-50,50) (-50,40) (-45,45)
+
+TRANSFORM t2 ROTATION 0 TRANSLATION (120,120) SCALE 0.6
+
+// diamond shaped arrow
+GRAPHIC g2 (0,0) (110,110) (110,120) (120,120) (120,110) (110,110)
+
+FRACTAL f1
+BRANCH t1 [0:8] GRAPHIC g1
+BRANCH t2 [0:2] GRAPHIC g2

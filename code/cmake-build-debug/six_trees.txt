@@ -1,0 +1,27 @@
+// there are two fractals here. f0 is a simple rotation which spawns f1 at each iteration
+// f1 creates a fractal 'tree' with 3 branches. The center branch of each iteration draws a 
+// triangular graphic with a center line. There are less lines as the circle is completed because
+// there are less iterations for the trees. One addition the the NFSF could be to 'reset' the 
+// iteration counter so the trees could have the same number of iterations in each.
+
+TRANSFORM t0 ROTATION 60 TRANSLATION (0, 0) SCALE 1
+
+TRANSFORM t1 ROTATION 0 TRANSLATION (0, 150) SCALE 0.5
+
+TRANSFORM t2 ROTATION 20 TRANSLATION (40, 70) SCALE 0.5
+
+TRANSFORM t3 ROTATION -20 TRANSLATION (-40, 70) SCALE 0.5
+
+GRAPHIC g1 (0,0) (0,140) (-10,0) (10,0) (0,140)
+
+GRAPHIC none
+
+FRACTAL f0 
+BRANCH t0 [0:4] GRAPHIC none
+BRANCH t0 [0:5] FRACTAL f1
+
+FRACTAL f1
+BRANCH t1 [0:8] GRAPHIC g1
+BRANCH t2 [0:8] GRAPHIC none
+BRANCH t3 [0:8] GRAPHIC none
+

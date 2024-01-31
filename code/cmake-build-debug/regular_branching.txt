@@ -1,0 +1,14 @@
+// This is a simple fractal 'tree' example.
+// It uses two transformations to create two branches
+
+TRANSFORM left ROTATION 0 TRANSLATION (-150, 150) SCALE 0.5
+
+TRANSFORM right ROTATION 0 TRANSLATION (150, 150) SCALE 0.5
+
+GRAPHIC g1 (0,0) (-150,150)
+
+GRAPHIC g2 (0,0) (150,150)
+
+FRACTAL f1
+BRANCH left [0:6] GRAPHIC g1
+BRANCH right [0:6] GRAPHIC g2

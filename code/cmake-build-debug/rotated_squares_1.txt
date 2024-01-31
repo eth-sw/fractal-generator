@@ -1,0 +1,10 @@
+// multiple rotated squares
+TRANSFORM t1 ROTATION 45 TRANSLATION (0,0) SCALE 1.1
+
+//square
+GRAPHIC square (-10,-10) (-10,10) (10,10) (10,-10) (-10,-10)
+
+FRACTAL f1
+BRANCH t1 [0:32] GRAPHIC square
+
+

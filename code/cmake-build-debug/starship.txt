@@ -1,0 +1,24 @@
+// Uses three transformations to create three branches
+// notice that only one graphic is used, and that it produces a simple '3 pronged fork'
+
+TRANSFORM t1 ROTATION 0 TRANSLATION (0,150) SCALE 0.5
+
+TRANSFORM t2 ROTATION 20 TRANSLATION (40,50) SCALE 0.5
+
+TRANSFORM t3 ROTATION -20 TRANSLATION (-40, 50) SCALE 0.5
+
+TRANSFORM t4 ROTATION 60 TRANSLATION (0, 50) SCALE 1
+
+GRAPHIC g1 (0,0) (0,140) (-30,0) (30,0) (0,140)
+//try this instead of the above line to see the difference
+//GRAPHIC g1 (0,0) (0,140) (0,50) (40,70) (0,50) (-40,70)
+//GRAPHIC g1 (0,0) (40,70) (-40,70) (0,0)
+
+FRACTAL f2
+BRANCH t1 [0:4] GRAPHIC g1
+BRANCH t2 [0:2] GRAPHIC NONE
+BRANCH t3 [0:2] GRAPHIC NONE
+
+FRACTAL f1
+BRANCH t4 [0:2] FRACTAL f2
+

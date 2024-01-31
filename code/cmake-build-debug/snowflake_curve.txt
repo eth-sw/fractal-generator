@@ -1,0 +1,36 @@
+// snowflake curve, equilateral triangles. Geometry needs a little calculation:
+// triangle side a = 150 and height = sqrt(0.75)*a = 129.90381, so half way = 64.95
+// therefore points are 450/2 = 225, and 150/2 = 75, so half way = 37.5
+
+TRANSFORM t_left ROTATION 0 TRANSLATION (-150,0) SCALE 0.333
+
+TRANSFORM t_right ROTATION 0 TRANSLATION (150,0) SCALE 0.333
+
+TRANSFORM t_center_right ROTATION 60 TRANSLATION (-37.5,64.95) SCALE 0.333
+
+TRANSFORM t_center_left ROTATION -60 TRANSLATION (37.5,64.95) SCALE 0.333
+
+TRANSFORM t_start_top ROTATION 0 TRANSLATION (0,129.903) SCALE 1
+
+// y = half height-129.903/2*3 (half height*1/scale) = 129.903-194.85 = -64.947
+// x = +/- w/4
+TRANSFORM t_start_right ROTATION -120 TRANSLATION (112.5,-64.947) SCALE 1
+
+TRANSFORM t_start_left ROTATION 120 TRANSLATION (-112.5,-64.947) SCALE 1
+
+GRAPHIC g (-225,0) (-75,0) (0,129.90381) (75,0) (225,0)
+
+GRAPHIC none 
+
+FRACTAL f2
+BRANCH t_left [1:5] GRAPHIC g
+BRANCH t_right [1:5] GRAPHIC g
+BRANCH t_center_right [1:5] GRAPHIC g
+BRANCH t_center_left [1:5] GRAPHIC g
+
+FRACTAL f1
+BRANCH t_start_top [0:0] FRACTAL f2
+BRANCH t_start_right [0:0] FRACTAL f2
+BRANCH t_start_left [0:0] FRACTAL f2
+
+

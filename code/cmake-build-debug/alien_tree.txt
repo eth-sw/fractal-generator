@@ -1,0 +1,27 @@
+// creates an alien tree using 2 fractals
+// the square stems with a missing corner, translation aligns corners
+
+TRANSFORM t_stems ROTATION 10 TRANSLATION (-48,41) SCALE 0.8
+
+GRAPHIC g_stem (-25,-25) (-25,25) (0,25) (25,0) (25,-25) (-25,-25)
+
+// the pointed triangular 'branches'
+TRANSFORM t_branch ROTATION -5 TRANSLATION (120, 120) SCALE 0.6
+
+GRAPHIC g_branch (0,25) (105,105) (25,0)
+
+// the 'shells'
+TRANSFORM t_shell_position ROTATION 45 TRANSLATION (-125, 0) SCALE 8
+
+TRANSFORM t_shell ROTATION 25 TRANSLATION (0, 10) SCALE 0.9
+
+// an octagon to make the 'shells'
+GRAPHIC g_shell (-10,-5) (-10,5) (-5,10) (5,10) (10,5) (10,-5) (5,-10) (-5,-10) (-10,-5)
+
+FRACTAL f2
+BRANCH t_shell [9:24] GRAPHIC g_shell
+
+FRACTAL f1
+BRANCH t_stems [0:8] GRAPHIC g_stem
+BRANCH t_branch [0:2] GRAPHIC g_branch
+BRANCH t_shell_position [8:8] FRACTAL f2

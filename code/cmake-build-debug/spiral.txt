@@ -1,0 +1,16 @@
+// makes a pair of spirals of squares using a 1 branch fractal
+
+TRANSFORM t1 ROTATION -24 TRANSLATION (4,0) SCALE 1.25
+
+GRAPHIC g1 (0,0) (0,20) (20,20) (20,0) (0,0)
+
+TRANSFORM t2 ROTATION -24 TRANSLATION (-4,0) SCALE 1.25
+
+// a square
+GRAPHIC g2 (0,0) (0,-20) (-20,-20) (-20,0) (0,0)
+
+FRACTAL f1
+BRANCH t1 [0:20] GRAPHIC g1
+
+FRACTAL f2
+BRANCH t2 [0:20] GRAPHIC g2

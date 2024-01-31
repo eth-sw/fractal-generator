@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="700">
+<rect width="100%" height="100%" fill="white" stroke="black"/>
+<g transform="translate(350,350) rotate(0) scale(1)">
+<polyline points="0.000000,-0.000000 0.000000,-50.000000 50.000000,-50.000000 50.000000,-0.000000 " fill="none" stroke="black"/>
+</g>
+<g transform="translate(355.000000,300.000000) rotate(-0.000000) scale(0.800000)">
+<polyline points="0.000000,-0.000000 0.000000,-50.000000 50.000000,-50.000000 50.000000,-0.000000 " fill="none" stroke="black" stroke-width="1.000000"/>
+</g>
+<g transform="translate(359.000000,260.000000) rotate(-0.000000) scale(0.640000)">
+<polyline points="0.000000,-0.000000 0.000000,-50.000000 50.000000,-50.000000 50.000000,-0.000000 " fill="none" stroke="black" stroke-width="1.250000"/>
+</g>
+<g transform="translate(362.200012,228.000000) rotate(-0.000000) scale(0.512000)">
+<polyline points="0.000000,-0.000000 0.000000,-50.000000 50.000000,-50.000000 50.000000,-0.000000 " fill="none" stroke="black" stroke-width="1.562500"/>
+</g>
+<g transform="translate(364.760010,202.399994) rotate(-0.000000) scale(0.409600)">
+<polyline points="0.000000,-0.000000 0.000000,-50.000000 50.000000,-50.000000 50.000000,-0.000000 " fill="none" stroke="black" stroke-width="1.953125"/>
+</g>
+<g transform="translate(366.808014,181.919998) rotate(-0.000000) scale(0.327680)">
+<polyline points="0.000000,-0.000000 0.000000,-50.000000 50.000000,-50.000000 50.000000,-0.000000 " fill="none" stroke="black" stroke-width="2.441406"/>
+</g>
+<g transform="translate(368.446411,165.535995) rotate(-0.000000) scale(0.262144)">
+<polyline points="0.000000,-0.000000 0.000000,-50.000000 50.000000,-50.000000 50.000000,-0.000000 " fill="none" stroke="black" stroke-width="3.051758"/>
+</g>
+<g transform="translate(369.757111,152.428802) rotate(-0.000000) scale(0.209715)">
+<polyline points="0.000000,-0.000000 0.000000,-50.000000 50.000000,-50.000000 50.000000,-0.000000 " fill="none" stroke="black" stroke-width="3.814697"/>
+</g>
+<g transform="translate(370.805695,141.943039) rotate(-0.000000) scale(0.167772)">
+<polyline points="0.000000,-0.000000 0.000000,-50.000000 50.000000,-50.000000 50.000000,-0.000000 " fill="none" stroke="black" stroke-width="4.768372"/>
+</g>
+<g transform="translate(371.644562,133.554428) rotate(-0.000000) scale(0.134218)">
+<polyline points="0.000000,-0.000000 0.000000,-50.000000 50.000000,-50.000000 50.000000,-0.000000 " fill="none" stroke="black" stroke-width="5.960464"/>
+</g>
+</svg>

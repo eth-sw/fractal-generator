@@ -1,0 +1,3 @@
+C:/Users/Ethan/Documents/Uni/CS23820/cs23820_ets6/ets6-code/cmake-build-debug/CMakeFiles/main_assignment.dir
+C:/Users/Ethan/Documents/Uni/CS23820/cs23820_ets6/ets6-code/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Ethan/Documents/Uni/CS23820/cs23820_ets6/ets6-code/cmake-build-debug/CMakeFiles/rebuild_cache.dir
