@@ -3,6 +3,7 @@
 ## Overview
 
 The Fractal Colouring Book Generator is a C program that reads instructions from an NFSF (Fractal Specification File) file and generates an SVG (Scalable Vector Graphics) file representing a fractal pattern. The program supports transforms, graphics, fractals, and branches to create intricate and visually appealing patterns.
+I achieved a mark of 74% for this assignment.
 
 ## Table of Contents
 
