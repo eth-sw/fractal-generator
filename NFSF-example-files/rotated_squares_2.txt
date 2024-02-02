@@ -1,0 +1,8 @@
+// makes a a spiral of squares
+TRANSFORM t ROTATION 10 TRANSLATION (0,0) SCALE 1.16
+
+//square
+GRAPHIC g (-10,-10) (-10,10) (10,10) (10,-10) (-10,-10)
+
+FRACTAL f
+BRANCH t [0:25] GRAPHIC g

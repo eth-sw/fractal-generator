@@ -1,0 +1,7 @@
+// simple vertically stacked squares 
+TRANSFORM t1 ROTATION 0 TRANSLATION (5, 50) SCALE 0.8
+
+GRAPHIC g1 (0,0) (0,50) (50,50) (50,0)
+
+FRACTAL f1
+BRANCH t1 [0:9] GRAPHIC g1

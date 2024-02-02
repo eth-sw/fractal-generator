@@ -1,0 +1,7 @@
+// simple rotated squares 
+TRANSFORM t1 ROTATION 30 TRANSLATION (0, 50) SCALE 1
+
+GRAPHIC g1 (0,0) (0,50) (50,50) (50,0) (0,0)
+
+FRACTAL f1
+BRANCH t1 [0:9] GRAPHIC g1

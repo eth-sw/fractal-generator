@@ -1,0 +1,9 @@
+// square net
+
+TRANSFORM t1 ROTATION 9.97 TRANSLATION (9.06,10.7) SCALE 1.010
+
+//square
+GRAPHIC square (-10,-10) (-10,10) (10,10) (10,-10) (-10,-10)
+
+FRACTAL f1
+BRANCH t1 [0:256] GRAPHIC square
